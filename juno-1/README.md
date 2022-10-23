@@ -2,6 +2,22 @@
 
 ![JUNOVERSE 34](https://user-images.githubusercontent.com/79812965/134063436-6f1bda5c-56f3-4bf3-a3a0-2b93f24217b1.png)
 
+## Syncing a node
+
+For a complete description of how to sync a node, including all upgrades, check out the [Juno Documentation site](https://docs.junonetwork.io/validators/mainnet-upgrades).
+
+In the `juno-1` folder you can find a number of upgrade files in all caps.
+
+Those that begin `0`, e.g. `0100_MONETA_UPGRADE.md` refer to the pre-attack `juno-1`. 
+
+Those that begin `1`, e.g. `1100_v3_1_0_UPGRADE.md` refer to the post-attack, relaunched `juno-1`.
+
+Those that begin `2`, e.g. `2100_vx_x_x_UPGRADE.md` refer to the post-July 28 attack, relaunched `juno-1`.
+
+## Original launch docs
+
+**Note these are left for historical reasons and are no longer relevant to running the chain.**
+
 _Planned Start Time: October 1st at 15:00 UTC._
 
 **Genesis File**
@@ -70,8 +86,8 @@ export GOPATH=~/go
 
 ### Minimum hardware requirements
 
-- 4GB RAM
-- 250GB of disk space
+- 32-64GB RAM
+- 500GB of disk space
 - 1.4 GHz amd64 CPU
 
 ## Setup validator node
@@ -136,7 +152,7 @@ Similar to Osmosis, only nodes that received the airdrop will be able to validat
 
 - Commit and push to your repo
 - Create a PR onto https://github.com/CosmosContracts/mainnet
-- Only PRs from individuals / groups with a history successfully running validator nodes and that have initial juno balance from the stakedrop will be accepted. This is to ensure the network successfully starts on time.
+- Only PRs from individuals / groups with a history of successfully running validator nodes and that have initial juno balance from the stakedrop will be accepted. This is to ensure the network successfully starts on time.
 
 #### Running in production
 
